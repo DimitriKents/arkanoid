@@ -77,7 +77,7 @@ let game = {
         this.ctx.drawImage(this.sprites.background, 0, 0);
         this.ctx.drawImage(this.sprites.ball, 0, 0, this.ball.width, this.ball.height,
             this.ball.x, this.ball.y, this.ball.width, this.ball.height);
-        this.ctx.drawImage(this.sprites.platform, 0, 0, this.platform.width, this.platform.height, this.platform.x, this.platform.y, this.platform.width, this.platform.height);
+        this.ctx.drawImage(this.sprites.platform, this.platform.x, this.platform.y);
         this.renderBlocks();
     },
     renderBlocks() {
